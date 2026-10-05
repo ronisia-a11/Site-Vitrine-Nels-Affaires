@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nos services - AfriDéco</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <img src="images/logo.png"
+                 alt="Logo AfriDéco">
+
+            <span>AfriDéco</span>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html"
+                       class="active">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <a href="contact.html"
+           class="btn-nav">
+
+            Nous contacter
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= TITRE ================= -->
+
+    <section class="page-header">
+
+        <p>
+            Notre savoir-faire
+        </p>
+
+        <h1>
+            Nos services
+        </h1>
+
+        <p>
+            Découvrez nos différentes créations
+            inspirées de l'art africain.
+        </p>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services-section">
+
+        <div class="services-grid">
+
+
+            <!-- SERVICE 1 -->
+
+            <div class="service-card"
+                 onclick="afficherService('vetements')">
+
+                <div class="service-image">
+
+                    <img src="images/vetements/vetement1.jpg"
+                         alt="Vêtements africains">
+
+                </div>
+
+                <div class="service-card-content">
+
+                    <span>
+                        Service 01
+                    </span>
+
+                    <h2>
+                        Conception des vêtements
+                    </h2>
+
+                    <p>
+                        Création de vêtements modernes
+                        avec des tissus africains.
+                    </p>
+
+                    <button>
+                        Voir les produits →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 2 -->
+
+            <div class="service-card"
+                 onclick="afficherService('tables')">
+
+                <div class="service-image">
+
+                    <img src="images/tables/table1.jpg"
+                         alt="Tables murales africaines">
+
+                </div>
+
+                <div class="service-card-content">
+
+                    <span>
+                        Service 02
+                    </span>
+
+                    <h2>
+                        Tables murales
+                    </h2>
+
+                    <p>
+                        Création de tables et décorations
+                        murales avec du pagne africain.
+                    </p>
+
+                    <button>
+                        Voir les produits →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 3 -->
+
+            <div class="service-card"
+                 onclick="afficherService('sacs')">
+
+                <div class="service-image">
+
+                    <img src="images/sacs/sac1.jpg"
+                         alt="Sacs africains">
+
+                </div>
+
+                <div class="service-card-content">
+
+                    <span>
+                        Service 03
+                    </span>
+
+                    <h2>
+                        Conception des sacs
+                    </h2>
+
+                    <p>
+                        Création de sacs uniques
+                        avec des tissus africains.
+                    </p>
+
+                    <button>
+                        Voir les produits →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 4 -->
+
+            <div class="service-card"
+                 onclick="afficherService('protections')">
+
+                <div class="service-image">
+
+                    <img src="images/protections/protection1.jpg"
+                         alt="Protection pour meubles">
+
+                </div>
+
+                <div class="service-card-content">
+
+                    <span>
+                        Service 04
+                    </span>
+
+                    <h2>
+                        Protections pour meubles
+                    </h2>
+
+                    <p>
+                        Protection et décoration
+                        de vos fauteuils et canapés.
+                    </p>
+
+                    <button>
+                        Voir les produits →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUITS ================= -->
+
+    <section id="produits-section"
+             class="products-section">
+
+        <div class="section-title">
+
+            <p id="service-label">
+                Nos créations
+            </p>
+
+            <h2 id="service-title">
+                Sélectionnez un service
+            </h2>
+
+        </div>
+
+
+        <div id="products-container"
+             class="products-grid">
+
+            <div class="empty-products">
+
+                <div>
+                    🛍️
+                </div>
+
+                <h3>
+                    Choisissez un service
+                </h3>
+
+                <p>
+                    Cliquez sur l'une des cartes
+                    ci-dessus pour découvrir
+                    nos produits.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    AfriDéco
+                </h3>
+
+                <p>
+                    Créations inspirées
+                    de la culture africaine.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <a href="index.html">
+                    Accueil
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📞 +237 6 XX XX XX XX
+                </p>
+
+                <p>
+                    📧 contact@afrideco.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 AfriDéco - Tous droits réservés.
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

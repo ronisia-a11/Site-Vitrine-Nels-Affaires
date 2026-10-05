@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - AfriDéco</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <img src="images/logo.png"
+                 alt="Logo AfriDéco">
+
+            <span>
+                AfriDéco
+            </span>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                       class="active">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <a href="contact.html"
+           class="btn-nav">
+
+            Nous contacter
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <section class="page-header">
+
+        <p>
+            Parlons de votre projet
+        </p>
+
+        <h1>
+            Contactez-nous
+        </h1>
+
+        <p>
+            Une question ? Une commande ?
+            N'hésitez pas à nous contacter.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section">
+
+        <!-- FORMULAIRE -->
+
+        <div class="contact-form-container">
+
+            <h2>
+                Envoyez-nous un message
+            </h2>
+
+            <p>
+                Remplissez le formulaire et
+                nous vous répondrons rapidement.
+            </p>
+
+
+            <form id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="nom">
+                        Nom complet
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nom"
+                        placeholder="Votre nom"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Adresse email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="exemple@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="telephone">
+                        Téléphone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telephone"
+                        placeholder="+237 6 XX XX XX XX"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="service">
+                        Service souhaité
+                    </label>
+
+                    <select id="service">
+
+                        <option value="">
+                            Choisissez un service
+                        </option>
+
+                        <option value="vetements">
+                            Conception des vêtements
+                        </option>
+
+                        <option value="tables">
+                            Tables murales
+                        </option>
+
+                        <option value="sacs">
+                            Conception des sacs
+                        </option>
+
+                        <option value="protections">
+                            Protection des meubles
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Votre message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Décrivez votre besoin..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit"
+                        class="btn-primary">
+
+                    Envoyer le message
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- CONTACTS -->
+
+        <div class="contact-info">
+
+            <h2>
+                Nos coordonnées
+            </h2>
+
+            <p>
+                Vous pouvez également nous
+                contacter directement.
+            </p>
+
+
+            <!-- TELEPHONE -->
+
+            <a href="tel:+237600000000"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+
+                    <strong>
+                        Téléphone
+                    </strong>
+
+                    <span>
+                        +237 6 XX XX XX XX
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- WHATSAPP -->
+
+            <a href="https://wa.me/237600000000"
+               target="_blank"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    💬
+                </div>
+
+                <div>
+
+                    <strong>
+                        WhatsApp
+                    </strong>
+
+                    <span>
+                        Écrivez-nous sur WhatsApp
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- FACEBOOK -->
+
+            <a href="https://facebook.com/"
+               target="_blank"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    f
+                </div>
+
+                <div>
+
+                    <strong>
+                        Facebook
+                    </strong>
+
+                    <span>
+                        Retrouvez-nous sur Facebook
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- TIKTOK -->
+
+            <a href="https://tiktok.com/"
+               target="_blank"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    ♪
+                </div>
+
+                <div>
+
+                    <strong>
+                        TikTok
+                    </strong>
+
+                    <span>
+                        Découvrez nos créations
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- SNAPCHAT -->
+
+            <a href="https://snapchat.com/"
+               target="_blank"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    👻
+                </div>
+
+                <div>
+
+                    <strong>
+                        Snapchat
+                    </strong>
+
+                    <span>
+                        Suivez-nous sur Snapchat
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- EMAIL -->
+
+            <a href="mailto:contact@afrideco.com"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    ✉
+                </div>
+
+                <div>
+
+                    <strong>
+                        Email
+                    </strong>
+
+                    <span>
+                        contact@afrideco.com
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    AfriDéco
+                </h3>
+
+                <p>
+                    Créations et décoration
+                    inspirées de l'Afrique.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <a href="index.html">
+                    Accueil
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📞 +237 6 XX XX XX XX
+                </p>
+
+                <p>
+                    📧 contact@afrideco.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 AfriDéco - Tous droits réservés.
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
