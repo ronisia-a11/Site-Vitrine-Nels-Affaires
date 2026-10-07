@@ -30,9 +30,9 @@ const SERVICES = {
     texte: "Tableaux et panneaux muraux en pagne africain, encadrés pour embellir votre salon.",
     motif: "m1",
     produits: [
-      { nom: "Table murale « Soleil »", prix: "35 000 FCFA", matiere: "Pagne wax sur cadre en bois", detail: "60 × 80 cm, prête à accrocher.", motif: "m1" },
-      { nom: "Table murale « Savane »", prix: "48 000 FCFA", matiere: "Pagne et raphia", detail: "80 × 100 cm.", motif: "m4" },
-      { nom: "Trio de petits tableaux", prix: "30 000 FCFA", matiere: "Pagne wax sur toile", detail: "3 pièces de 30 × 30 cm.", motif: "m6" }
+      { img: "tableau.jpeg", nom: "Table murale « Soleil »", prix: "35 000 FCFA", matiere: "Pagne wax sur cadre en bois", detail: "60 × 80 cm, prête à accrocher.", motif: "m1" },
+      { img: "tableau1.jpeg", nom: "Table murale « Savane »", prix: "48 000 FCFA", matiere: "Pagne et raphia", detail: "80 × 100 cm.", motif: "m4" },
+      { img: "habit.jpeg", nom: "Trio de petits tableaux", prix: "30 000 FCFA", matiere: "Pagne wax sur toile", detail: "3 pièces de 30 × 30 cm.", motif: "m6" }
     ]
   },
   sacs: {
@@ -52,8 +52,8 @@ const SERVICES = {
     texte: "Housses de canapé, chemins de table et couvre-fauteuils faits sur mesure.",
     motif: "m4",
     produits: [
-      { nom: "Housse de canapé 3 places", prix: "45 000 FCFA", matiere: "Pagne coton épais, lavable en machine", detail: "Élastique aux angles.", motif: "m4" },
-      { nom: "Chemin de table", prix: "10 000 FCFA", matiere: "Wax coton", detail: "180 × 40 cm.", motif: "m6" },
+      { img: "lit.jpeg",nom: "Drap et the d'oreillers", prix: "45 000 FCFA", matiere: "Pagne coton épais, lavable en machine", detail: "Élastique aux angles.", motif: "m4" },
+      { img: "table.jpeg", nom: "Chemin de table", prix: "10 000 FCFA", matiere: "Wax coton", detail: "180 × 40 cm.", motif: "m6" },
       { nom: "Couvre-fauteuil", prix: "18 000 FCFA", matiere: "Bogolan (coton tissé)", detail: "Pièce unique.", motif: "m1" }
     ]
   }
