@@ -119,52 +119,39 @@ if (zoneLiens) {
     <a class="reseau sc" href="${e.snapchat}" target="_blank" rel="noopener">Snapchat</a>`;
 }
 
-/*
 const form = document.getElementById("form-contact");
 if (form) {
-  form.addEventListener("submit", ev => {
-    ev.preventDefault();
-    const d = new FormData(form);
-    const msg = `Nom : ${d.get("nom")}\nTéléphone : ${d.get("tel")}\nService : ${d.get("service")}\n${d.get("message")}`;
-    document.getElementById("retour-form").textContent = "Ouverture de WhatsApp pour envoyer votre message…";
-    window.open(`https://wa.me/${ENTREPRISE.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank");
-    form.reset();
-  });
-} */
+  const bouton = form.querySelector('button[type="submit"]');
+  const retour = document.getElementById("retour-form");
 
-const form = document.getElementById('form');
-const submitBtn = form.querySelector('button[type="submit"]');
-
-form.addEventListener('submit', async (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
-
-    const formData = new FormData(form);
-    formData.append("access_key", "77c5385a-f397-4180-a786-f244dc360868");
-
-    const originalText = submitBtn.textContent;
-
-    submitBtn.textContent = "Sending...";
-    submitBtn.disabled = true;
+    const texteInitial = bouton.textContent;
+    bouton.textContent = "Envoi en cours…";
+    bouton.disabled = true;
+    retour.textContent = "";
 
     try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
+      const reponse = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: new FormData(form)   // contient déjà access_key (champ caché)
+      });
+      const data = await reponse.json();
 
-        const data = await response.json();
-
-        if (response.ok) {
-            alert("Success! Your message has been sent.");
-            form.reset();
-        } else {
-            alert("Error: " + data.message);
-        }
-
-    } catch (error) {
-        alert("Something went wrong. Please try again.");
+      if (reponse.ok && data.success) {
+        retour.style.color = "";
+        retour.textContent = "Merci ! Votre message a bien été envoyé, nous vous répondons rapidement.";
+        form.reset();
+      } else {
+        retour.style.color = "#b8432b";
+        retour.textContent = "Erreur : " + (data.message || "l'envoi a échoué.");
+      }
+    } catch (erreur) {
+      retour.style.color = "#b8432b";
+      retour.textContent = "Problème de connexion. Vérifiez votre internet et réessayez.";
     } finally {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
+      bouton.textContent = texteInitial;
+      bouton.disabled = false;
     }
-});
+  });
+}
