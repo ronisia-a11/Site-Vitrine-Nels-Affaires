@@ -118,6 +118,8 @@ if (zoneLiens) {
     <a class="reseau tk" href="${e.tiktok}" target="_blank" rel="noopener">TikTok</a>
     <a class="reseau sc" href="${e.snapchat}" target="_blank" rel="noopener">Snapchat</a>`;
 }
+
+/*
 const form = document.getElementById("form-contact");
 if (form) {
   form.addEventListener("submit", ev => {
@@ -128,4 +130,41 @@ if (form) {
     window.open(`https://wa.me/${ENTREPRISE.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank");
     form.reset();
   });
-}
+} */
+
+const form = document.getElementById('form');
+const submitBtn = form.querySelector('button[type="submit"]');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    formData.append("access_key", "77c5385a-f397-4180-a786-f244dc360868");
+
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("Success! Your message has been sent.");
+            form.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
