@@ -1,10 +1,10 @@
 /* ====== À PERSONNALISER ====== */
 const ENTREPRISE = {
-  nom: "Pagne & Maison",
-  whatsapp: "237600000000",        // numéro international, sans + ni espaces
-  telephone: "+237 600 00 00 00",
-  facebook: "https://facebook.com/votrepage",
-  tiktok: "https://tiktok.com/@votrecompte",
+  nom: "Nels Affaires",
+  whatsapp: "237674671674",        // numéro international, sans + ni espaces
+  telephone: "+237 674 671 674",
+  facebook: "https://facebook.com/Nels.Affaires",
+  tiktok: "https://tiktok.com/@00237nelsvibes",
   snapchat: "https://snapchat.com/add/votrecompte",
   adresse: "Douala, Cameroun"
 };
