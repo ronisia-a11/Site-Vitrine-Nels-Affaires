@@ -14,16 +14,18 @@ const ENTREPRISE = {
    Pour une vraie photo, ajoutez  img: "images/mon-produit.jpg"  */
 const SERVICES = {
   vetements: {
+    img: "habit.jpeg",
     titre: "Conception de vêtements",
     texte: "Robes, chemises, ensembles couple et tenues de cérémonie, cousus sur mesure.",
     motif: "m2",
     produits: [
-      { nom: "Robe évasée en pagne", prix: "25 000 FCFA", matiere: "Wax 100 % coton", detail: "Sur mesure, délai 7 jours.", motif: "m2" },
+      { nom: "Tenue de nuit en pagne", prix: "25 000 FCFA", matiere: "Wax 100 % coton", detail: "Sur mesure, délai 7 jours.", motif: "m2" },
       { nom: "Chemise homme col mao", prix: "18 000 FCFA", matiere: "Wax coton, doublure légère", detail: "Tailles S à XXL.", motif: "m3" },
       { nom: "Ensemble couple", prix: "40 000 FCFA", matiere: "Super wax", detail: "Deux pièces assorties, sur mesure.", motif: "m5" }
     ]
   },
   tables: {
+    img: "tableaux.jpeg",
     titre: "Tables murales",
     texte: "Tableaux et panneaux muraux en pagne africain, encadrés pour embellir votre salon.",
     motif: "m1",
@@ -34,6 +36,7 @@ const SERVICES = {
     ]
   },
   sacs: {
+    img: "sac.jpeg",
     titre: "Sacs",
     texte: "Sacs à main, sacs de voyage et pochettes en pagne, solides et colorés.",
     motif: "m3",
@@ -44,6 +47,7 @@ const SERVICES = {
     ]
   },
   protections: {
+    img: "table.jpeg",
     titre: "Protections pour meubles",
     texte: "Housses de canapé, chemins de table et couvre-fauteuils faits sur mesure.",
     motif: "m4",
