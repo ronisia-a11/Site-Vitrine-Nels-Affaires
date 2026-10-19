@@ -36,14 +36,14 @@ const SERVICES = {
     ]
   },
   sacs: {
-    img: "sac.jpeg",
+    img: "sac1.png",
     titre: "Sacs",
     texte: "Sacs à main, sacs de voyage et pochettes en pagne, solides et colorés.",
     motif: "m3",
     produits: [
-      { nom: "Sac cabas", prix: "15 000 FCFA", matiere: "Wax coton, anses en cuir synthétique", detail: "Fermeture zip, poche intérieure.", motif: "m3" },
-      { nom: "Pochette de soirée", prix: "8 000 FCFA", matiere: "Pagne et satin", detail: "Tour de main inclus.", motif: "m5" },
-      { nom: "Sac de voyage", prix: "28 000 FCFA", matiere: "Pagne enduit, imperméable", detail: "45 L.", motif: "m2" }
+      { img: "sac2.png", nom: "Sac cabas", prix: "15 000 FCFA", matiere: "Wax coton, anses en cuir synthétique", detail: "Fermeture zip, poche intérieure.", motif: "m3" },
+      { img: "sac3.png", nom: "Pochette de soirée", prix: "8 000 FCFA", matiere: "Pagne et satin", detail: "Tour de main inclus.", motif: "m5" },
+      { img: "trousse.png",nom: "Sac de voyage", prix: "28 000 FCFA", matiere: "Pagne enduit, imperméable", detail: "45 L.", motif: "m2" }
     ]
   },
   protections: {
