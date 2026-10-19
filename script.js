@@ -52,9 +52,9 @@ const SERVICES = {
     texte: "Housses de canapé, chemins de table et couvre-fauteuils faits sur mesure.",
     motif: "m4",
     produits: [
-      { img: "lit.jpeg",nom: "Drap et the d'oreillers", prix: "45 000 FCFA", matiere: "Pagne coton épais, lavable en machine", detail: "Élastique aux angles.", motif: "m4" },
+      { img: "lit.jpeg", nom: "Drap et the d'oreillers", prix: "45 000 FCFA", matiere: "Pagne coton épais, lavable en machine", detail: "Élastique aux angles.", motif: "m4" },
       { img: "table.jpeg", nom: "Chemin de table", prix: "10 000 FCFA", matiere: "Wax coton", detail: "180 × 40 cm.", motif: "m6" },
-      { nom: "Couvre-fauteuil", prix: "18 000 FCFA", matiere: "Bogolan (coton tissé)", detail: "Pièce unique.", motif: "m1" }
+      { img: "couvre_fauteil.png", nom: "Couvre-fauteuil", prix: "18 000 FCFA", matiere: "Bogolan (coton tissé)", detail: "Pièce unique.", motif: "m1" }
     ]
   }
 };
