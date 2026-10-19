@@ -19,8 +19,8 @@ const SERVICES = {
     texte: "Robes, chemises, ensembles couple et tenues de cérémonie, cousus sur mesure.",
     motif: "m2",
     produits: [
-      { nom: "Tenue de nuit en pagne", prix: "25 000 FCFA", matiere: "Wax 100 % coton", detail: "Sur mesure, délai 7 jours.", motif: "m2" },
-      { nom: "Chemise homme col mao", prix: "18 000 FCFA", matiere: "Wax coton, doublure légère", detail: "Tailles S à XXL.", motif: "m3" },
+      { img: "ensemble.png",nom: "Tenue de bain pour mariage", prix: "25 000 FCFA", matiere: "Wax 100 % coton", detail: "Sur mesure, délai 7 jours.", motif: "m2" },
+      { img: "chapeau.png",nom: "chapeau pour femme", prix: "5 000 FCFA", matiere: "Wax coton, doublure légère", detail: "Tailles S à XXL.", motif: "m3" },
       { nom: "Ensemble couple", prix: "40 000 FCFA", matiere: "Super wax", detail: "Deux pièces assorties, sur mesure.", motif: "m5" }
     ]
   },
@@ -30,9 +30,9 @@ const SERVICES = {
     texte: "Tableaux et panneaux muraux en pagne africain, encadrés pour embellir votre salon.",
     motif: "m1",
     produits: [
-      { img: "tableau.jpeg", nom: "Table murale « Soleil »", prix: "35 000 FCFA", matiere: "Pagne wax sur cadre en bois", detail: "60 × 80 cm, prête à accrocher.", motif: "m1" },
-      { img: "tableau1.jpeg", nom: "Table murale « Savane »", prix: "48 000 FCFA", matiere: "Pagne et raphia", detail: "80 × 100 cm.", motif: "m4" },
-      { img: "habit.jpeg", nom: "Trio de petits tableaux", prix: "30 000 FCFA", matiere: "Pagne wax sur toile", detail: "3 pièces de 30 × 30 cm.", motif: "m6" }
+      { img: "tableau.jpeg", nom: "Table murale « Soleil »", prix: "20 000 FCFA", matiere: "Pagne wax sur cadre en bois", detail: "60 × 80 cm, prête à accrocher.", motif: "m1" },
+      { img: "tableau1.jpeg", nom: "Table murale « Savane »", prix: "28 000 FCFA", matiere: "Pagne et raphia", detail: "80 × 100 cm.", motif: "m4" },
+      { img: "tableau1.png", nom: "Trio de petits tableaux", prix: "20 000 FCFA", matiere: "Pagne wax sur toile", detail: "3 pièces de 30 × 30 cm.", motif: "m6" }
     ]
   },
   sacs: {
@@ -41,9 +41,9 @@ const SERVICES = {
     texte: "Sacs à main, sacs de voyage et pochettes en pagne, solides et colorés.",
     motif: "m3",
     produits: [
-      { img: "sac2.png", nom: "Sac a main", prix: "15 000 FCFA", matiere: "Wax coton, anses en cuir synthétique", detail: "Fermeture zip, poche intérieure.", motif: "m3" },
-      { img: "sac3.png", nom: "Sac des courses", prix: "8 000 FCFA", matiere: "Pagne et satin", detail: "Tour de main inclus.", motif: "m5" },
-      { img: "trousse.png",nom: "Trousse", prix: "28 000 FCFA", matiere: "Pagne enduit, imperméable", detail: "45 L.", motif: "m2" }
+      { img: "sac2.png", nom: "Sac a main", prix: "10 000 FCFA", matiere: "Wax coton, anses en cuir synthétique", detail: "Fermeture zip, poche intérieure.", motif: "m3" },
+      { img: "sac3.png", nom: "Sac des courses", prix: "3 500 FCFA", matiere: "Pagne et satin", detail: "Tour de main inclus.", motif: "m5" },
+      { img: "trousse.png",nom: "Trousse", prix: "1 000 FCFA", matiere: "Pagne enduit, imperméable", detail: "45 L.", motif: "m2" }
     ]
   },
   protections: {
